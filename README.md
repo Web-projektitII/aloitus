@@ -1,2 +1,2 @@
 # aloitus
-Web-ohjelmointikurssi 9/2021.
+Web-ohjelmointikurssi 9/2021, paikallinen kehitys.
