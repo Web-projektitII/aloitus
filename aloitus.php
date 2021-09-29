@@ -17,6 +17,7 @@
 
 <body>
 <?php
+/* PHP-osuus */
 include("header.html");
 ?>
 <div>

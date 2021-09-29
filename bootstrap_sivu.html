@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web-ohjelmointikurssin aloitus</title>
+<meta name="description" content="Web-ohjelmointikurssin HTML-aloitus.">
+<meta name="author" content="Web-ohjelmoija">
+<meta property="og:title" content="Web-ohjelmointikurssin aloitus">
+<meta property="og:type" content="web-sivu">
+<!--<meta property="og:url" content="http://127.0.0.1/aloitus/aloitus.html">-->
+<meta property="og:description" content="HTML-malli.">
+<!--<meta property="og:image" content="image.png">-->
+<!--<link rel="stylesheet" href="site.css">-->
+<!--<script src="scripts.js"></script>-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+.navbar {padding:0 1rem;}   
+main {padding-bottom:20px;} 
+#footer {text-align:center;}
+div {font-family:Arial;}
+.perusta {
+    font-weight:normal;
+    background-color:orange;
+    border: 1px solid blue;
+    }
+.container {
+    /*width:100%;*/
+}    
+
+.laatikko {
+    background-color:rgb(68, 0, 255);
+    border: 2px solid white;
+    height:100px;
+    /*padding:4px;*/
+    } 
+
+.laatikko_normal {
+    display:inline-block;
+    background-color:orange;
+    border: 1px solid blue;
+    width:100%;
+    height:100px;
+    } 
+
+@media (min-width: 576px) {
+.laatikko_normal {width:calc(50% - 5px);}
+}
+
+@media (min-width: 768px) {
+.laatikko_normal {width:calc(100%/3 - 5px);}
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+</style>
+<script>
+function napsautus(){
+    alert("Hello!");
+}
+</script>
+</head>
+<body>
+<div id="root" class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="omnia_logo.png" width="75" height="75" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Bootstrap_versio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Etusivu</a>
+            </li>
+           </ul>
+         
+        </div>
+      </nav>
+<main class="flex-fill">
+<p class="perusta" onclick="napsautus();" style="color:blue">Hello world!</p>
+<p>Normaali</p>
+<div class="container_normal">
+    <div class="laatikko_normal"></div>
+    <div class="laatikko_normal"></div>
+    <div class="laatikko_normal"></div>
+    <div class="laatikko_normal"></div>
+</div>
+<p>Bootstrap 4.3.1</p>
+<div class="row">
+    <div class="laatikko col-sm-6 col-md-4 col-lg"></div>
+    <div class="laatikko col-sm-6 col-md-4 col-lg"></div>
+    <div class="laatikko col-sm-6 col-md-4 col-lg"></div>
+    <div class="laatikko col-sm-6 col-md-4 col-lg"></div>
+</div>
+</main>
+<footer class="container-fluid w-100 bg-dark text-light py-3">
+  <div id="footer">
+    <span>Footer</span>
+  </div>
+</footer>
+</div>
+</body>
+</html>
