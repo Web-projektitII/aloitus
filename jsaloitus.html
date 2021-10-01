@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Hello</title>
+    <script>  
+    
+function Auto(merkki, malli){
+  this.merkki = merkki
+  this.malli = malli
+}
+
+function Rekka(merkki, malli) {
+  Auto.call(this, merkki, malli);
+  this.vaihteita = 6;
+}
+/*Rekka.prototype = new Auto();*/
+
+/*Rekka = new Auto();
+Rekka.prototype.vaihteita = 6;*/
+biili = new Rekka("Sisu", "Kontio");
+
+console.log(biili.merkki);    // "Sisu"
+console.log(biili.vaihteita); // 6
+
+    var str = "Visit Microsoft!";
+    var res = str.replace(/o/ig, "ö"); // Visit MetSchools   
+    console.log(`res:${res}`);
+
+
+
+    
+   function noisy(f) {  
+     return (...args) => {
+        console.log("calling with", args);
+        var result = f(...args);
+        console.log("called with:", args, ", returned:", result);
+        return (...args) => console.log("viimeiset:",args);
+        };
+    }
+noisy(Math.min)(3, 2, 1)(6,5,4);     
+    document.addEventListener('DOMContentLoaded', function() {
+    // Send a GET request to the URL
+    fetch('http://api.exchangeratesapi.io/latest?access_key=aab05d6f5320030bc5556d33f39e050d')
+    // Put response into json form
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.rates);
+        // Get rate from data
+        const rate = data.rates.USD;
+        // Display message on the screen
+        document.querySelector('h1').innerHTML = `1 EUR is equal to ${rate.toFixed(3)} USD.`;
+        });
+    });
+
+    </script>
+    </head>
+    <body>
+        <h1>Hello!</h1>
+    </body>
+</html>

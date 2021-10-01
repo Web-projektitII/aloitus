@@ -17,9 +17,18 @@
 
 <body>
 <?php
+/* PHP-osuus */
 include("header.html");
 ?>
 <div>
+
+<?php
+$testiArr = ['nolla','yksi','kaksi'];
+$testiJSON = json_encode($testiArr);
+echo "<script>console.log('testiJSON:'+$testiJSON)</script>";
+echo "<p>Valmis</p>";
+?>
+
 </div>
 <?php
 include("footer.php");

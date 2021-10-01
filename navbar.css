@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+header {
+    height: 100%;
+    width: 100%;
+    float: left;
+    background: navy;
+    color: #fff;
+}
+.brand-logo {
+    max-width: 75px;
+    float: left;
+}
+.brand-logo img {
+    max-width: 100%;
+    margin-left:20px;
+}
+.show-menu-btn,
+.hide-menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+}
+.show-menu-btn {
+    margin: 0px;
+    margin-right:20px;
+    float: right;
+}
+.hide-menu-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.show-menu-btn i {line-height: 75px;}
+.navigation a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {color: #00ff0a;}
+#toggle-btn {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+.navigation {
+    display:none;
+    margin: 0px;
+    float: right;
+    position: fixed;
+    width: 100%;
+    background: navy;
+    padding: 10px 0px;
+}
+.navigation li {list-style: none;}
+.navigation li a {
+    color: #fff;
+    padding: 5px 15px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+}
+.navigation li a i {
+    width: auto;
+    font-size: 20px;
+}
+#toggle-btn:checked ~ nav .navigation {display:block;}
+
+@media screen and (min-width:767px) {
+    .navigation {
+        left:auto;
+        right:0px;
+        width:auto;
+        display:block;
+        }
+    .navigation li {float:left;}
+    .navigation li a {text-align: center;}
+    .navigation li a i {
+        width: 100%;
+        margin-bottom: 7px;
+        }
+    .show-menu-btn,
+    .hide-menu-btn {display: none;}
+}

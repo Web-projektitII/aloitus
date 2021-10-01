@@ -1,0 +1,28 @@
+Tietokantayhteyden luominen
+https://www.php.net/manual/en/mysqli.construct.php
+https://www.php.net/manual/en/mysqli.connect-errno.php
+https://www.php.net/manual/en/mysqli.connect-error.php
+
+Kyselyn valmistelu
+https://www.php.net/manual/en/mysqli.set-charset.php
+https://www.php.net/manual/en/mysqli.real-escape-string.php
+
+Kyselyn tiedot
+https://www.php.net/manual/en/mysqli.query.php
+https://www.php.net/manual/en/mysqli.affected-rows.php
+https://www.php.net/manual/en/mysqli.insert-id.php
+https://www.php.net/manual/en/mysqli-result.num-rows.php
+https://www.php.net/manual/en/mysqli.errno.php
+https://www.php.net/manual/en/mysqli.error.php
+
+
+Kyselytuloksen haku
+https://www.php.net/manual/en/mysqli-result.fetch-array.php
+https://www.php.net/manual/en/mysqli-result.fetch-assoc.php
+https://www.php.net/manual/en/mysqli-result.fetch-row.php
+
+Yhteyden vapauttaminen
+https://www.php.net/manual/en/mysqli-result.free.php
+https://www.php.net/manual/en/mysqli.close.php
+
+
