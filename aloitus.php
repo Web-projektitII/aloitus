@@ -14,10 +14,11 @@
 <link rel="stylesheet" href="site.css">
 <!--<script src="scripts.js"></script>-->
 </head>
-
 <body>
 <?php
-/* PHP-osuus */
+/* PHP-osuus 1.10.2021 */
+define('DEBUG',true);
+include("debuggeri.php");
 include("header.html");
 ?>
 <div>
@@ -25,6 +26,8 @@ include("header.html");
 <?php
 $testiArr = ['nolla','yksi','kaksi'];
 $testiJSON = json_encode($testiArr);
+
+debuggeri($testiJSON);
 echo "<script>console.log('testiJSON:'+$testiJSON)</script>";
 echo "<p>Valmis</p>";
 ?>
