@@ -22,9 +22,7 @@ div {font-family:Arial;}
     background-color:orange;
     border: 1px solid blue;
     }
-.container {
-    /*width:100%;*/
-}    
+  
 .laatikko_normal {
     display:inline-block;
     background-color:orange;
