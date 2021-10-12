@@ -1,3 +1,3 @@
 <?php
-echo "Tähän tulee footer.";
+echo "Tämä on footer.";
 ?>
